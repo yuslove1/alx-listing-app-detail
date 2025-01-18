@@ -6,6 +6,7 @@ import Link from "next/link";
 const PropertyCard: React.FC<{ property: PropertyProps }> = ({ property }) => {
   return (
     <div className="border rounded-lg overflow-hidden shadow-md">
+      <Link href={`/property/${property.name}`}>
       <img src={property.image} alt={property.name} className="w-full h-64 object-cover" />
       <div className="p-4">
         <h3 className="text-xl font-semibold">{property.name}</h3>
@@ -25,6 +26,7 @@ const PropertyCard: React.FC<{ property: PropertyProps }> = ({ property }) => {
           {/* <Button className="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg"/> */}
         </div>
       </div>
+      </Link>
     </div>
   );
 };
