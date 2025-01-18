@@ -1,5 +1,7 @@
-import { PropertyProps } from "../interfaces";
+import { PropertyProps } from "@/interfaces";
 import Button from "./Button";
+import Link from "next/link";
+
 
 const PropertyCard: React.FC<{ property: PropertyProps }> = ({ property }) => {
   return (
