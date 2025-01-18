@@ -1,3 +1,5 @@
+import { PropertyProps } from "@/interfaces";
+
 //Set up constants to store any reusable data or strings such as API URLs, configuration settings, or UI text, e.g
 
 // export const BUTTON_TEXT = {
@@ -12,6 +14,7 @@ export interface PillProps {
   onClick: (label: string) => void;
   selected: boolean;
 }
+
 
 //An array of property data
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [

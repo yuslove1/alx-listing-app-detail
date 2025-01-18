@@ -14,8 +14,8 @@ export default function PropertyPage() {
   return (
     <div>
       <PropertyDetail property={property} />
-      <BookingSection price={property.price} />
       <ReviewSection reviews={property.reviews} />
+      <BookingSection price={property.price} />
     </div>
   );
 }
